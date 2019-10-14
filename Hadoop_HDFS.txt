@@ -1,2 +1,34 @@
 分布式文件系统
+Hadoop distributed file system	
+HDFS的核心概念
+1.Blocks
+
+2.Namenode & Datanode
+
+
+3.Block Caching
+
+
+4.HDFS Federation
+
+
+5.HDFS HA(high Availability)
+
+
+Hadoop 高可用性的方案
+
+
+命令行接口
+
+
+Hadoop文件系统
+
+
+Java接口
+
+
+数据流
+
+
+相关运维工具
 
