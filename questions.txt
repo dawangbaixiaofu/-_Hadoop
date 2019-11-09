@@ -15,4 +15,10 @@ ifup 网卡名称 up
 ifconfig 网卡名称 up
 service network restart 
 网卡的配置文件，如何解读？
+不同的Linux版本，在重新启动网卡上面是不一样的
+在Linux8中，重启网卡的command
+nmcli connection reload 网卡名称
+nmcli connection up 网卡名称
+在Linux7中，重启网卡的名称是：
+systemctl restart network service
 
