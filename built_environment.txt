@@ -1,2 +1,42 @@
 How to built the environment in linux system ?
+what i need to built the hadoop in linux system?
+how i built the environment in linux system?
+－－－－－－－－－－－－－
+搭建集群的网络配置
+－－－－－－－－－－－－－
+在一台虚拟机上创建Linux，Hadoop，然后进行克隆，生成多个不同的子节点。
+克隆成功后，需要对各个子节点进行网络配置。
+vi /etc/udev/rules.d/70-presistent-net.rules
+删除name=eth0，修改NAME='etho'
+
+修改ip的配置文件。
+NAT模式，提供虚拟交换机，可以在虚拟网络编辑中查看虚拟交换机的网关地址
+修改电脑本地VMnet8,是本电脑在这个虚拟网关下的ip地址
+虚拟出来的Linux，修改ip地址
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+删除HWADDR物理地址
+和UUID
+onboot=yes
+bootproto=static
+ipaddr=
+gateway=
+netmask=
+dns1=网关地址
+
+
+修改主机名：
+vi etc/sysconfig/network
+HOStNAME=
+
+reboot进行重启
+
+ping 检查网络是否通
+
+在Windows中c:/windows/system32/drivers/etc/hosts
+下进行配置Linux中虚拟节点网络ip，为IP地址起别名
+
+ping 别名 进行测试
+关闭VM选择在后台运行
+2019-10-14 23:55
+
 

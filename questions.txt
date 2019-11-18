@@ -1,0 +1,24 @@
+数据的最小存储单位是：字节。bite=8个二进制位
+文件系统存储数据的最小单位是块：block
+block的大小是：128M
+什么是block的元信息？元信息包括了那些内容？
+udev功能是什么？存在的目的是什么？
+uuid和mac地址的区别？
+ifconfig 和 配置网卡内容不一致？
+网卡配置文件中没有mac地址，怎么生成Mac地址？
+怎么生产UUID？
+
+/etc/udev/rules.d/70-
+设备文件如何配置？
+
+ifup 网卡名称 up
+ifconfig 网卡名称 up
+service network restart 
+网卡的配置文件，如何解读？
+不同的Linux版本，在重新启动网卡上面是不一样的
+在Linux8中，重启网卡的command
+nmcli connection reload 网卡名称
+nmcli connection up 网卡名称
+在Linux7中，重启网卡的名称是：
+systemctl restart network service
+
