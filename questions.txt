@@ -22,3 +22,10 @@ nmcli connection up 网卡名称
 在Linux7中，重启网卡的名称是：
 systemctl restart network service
 
+
+
+java jdk(java development kit)
+	SE(standard edition) 标准版
+	EE(enterprise edition) 企业版
+	ME(micro edition) 主要用于移动设备、嵌入式设备。
+
