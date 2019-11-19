@@ -47,3 +47,124 @@ java 中的interface接口：
 Java包：
 import 语句
 
+java内置数据类型8中
+byte
+short 
+int
+long
+float 
+double
+char
+boolean
+
+
+String
+引用类型
+引用类型指向一个对象，指向对象的变量是引用变量。
+例子：Site site = new Site("Runoob")。
+
+
+Java常量：使用修饰符final
+final double PI = 3.1415927;
+
+自动类型转换和强制类型转换
+(type)变量
+隐含类型转换
+
+java的局部变量
+访问修饰符不能用户局部变量；
+局部变量没有默认值，声明的时候，必须初始化，才可以使用。
+
+实例变量（成员变量）
+访问修饰符可以修饰实例变量
+实例变量可以有默认值。数值型变量默认值是0，布尔型变量默认值是false
+引用类型变量默认值是null
+
+类变量也称为是静态变量：
+在类中必须使用static关键字
+静态变量除了被声明为常量外很少使用。
+默认值和实例变量相似。
+
+java访问控制修饰符
+public
+default(默认什么也不写)
+protected
+private
+
+父类中声明为public的方法在子类中必须为public
+父类中声明为 protected 的方法在子类中要么声明为 protected，要么声明为 public，不能声明为 private。
+父类中声明为 private 的方法，不能够被继承。
+
+非访问修饰符
+static 
+final
+abstract 
+synchronized volatile
+
+static分为静态变量和静态方法：
+静态变量：
+无论一个类实例化多少对象，它的静态变量只有一份拷贝。
+静态方法：
+静态方法不能使用类的非静态变量。静态方法从参数列表得到数据，然后计算这些数据。
+
+final修饰符
+变量一旦赋值后，不能被重新赋值。
+final 方法
+父类中的 final 方法可以被子类继承，但是不能被子类重写。
+final 类
+final 类不能被继承，没有类能够继承 final 类的任何特性。
+
+
+abstract修饰符
+abstract类 抽象类
+抽象方法是一种没有任何实现的方法，该方法的的具体实现由子类提供。
+
+abstract方法
+抽象方法是一种没有任何实现的方法，该方法的的具体实现由子类提供。
+抽象方法不能被声明成 final 和 static。
+任何继承抽象类的子类必须实现父类的所有抽象方法，除非该子类也是抽象类
+如果一个类包含若干个抽象方法，那么该类必须声明为抽象类。抽象类可以不包含抽象方法。
+
+synchronize方法
+synchronized 关键字声明的方法同一时间只能被一个线程访问。synchronized 修饰符可以应用于四个访问修饰符。
+
+transient修饰符
+volatile修饰符
+
+instanceof运算符
+检查对象是否是一个特定类型
+
+
+Java循环结构
+while 
+do .... while
+for
+
+while()
+{}
+
+
+do{}
+while();
+
+for(初始化;布尔表达式;更新)
+{}
+
+
+for(int x = 10; x<20,x=x+1)
+{
+
+}
+
+java增强for循环
+for(声明语句:表达式)
+{}
+
+break关键字
+continue关键字
+
+Java中if else
+
+
+
+
